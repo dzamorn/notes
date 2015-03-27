@@ -37,7 +37,7 @@ font-family Arial
 font-size 20px
 ```
 
-Ширность текста:
+Жирность текста:
 
 ```stylus
 font-weight normal // Обычный текст

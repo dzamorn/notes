@@ -35,3 +35,23 @@ font-size 20px
 font-weight normal // Обычный текст
 font-weight bold // Жирный текст
 ```
+
+## Типы элементов
+
+Блок:
+
+```stylus
+display block
+```
+
+Строковой блок:
+
+```stylus
+display inline-block
+```
+
+Строковой элемент:
+
+```stylus
+display inline
+```

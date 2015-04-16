@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register form</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			background-color:;
+			padding: 30px;
+			font-family: Arial;
+		}
+		h1 {
+			padding-top: 0;
+			margin-top: 0;
+			font-weight: normal;
+			color: #555;
+			font-size: 25px;
+			padding-bottom: 20px;
+			border-bottom: 1px dotted #aaa;
+			margin-bottom: 20px;
+		}
+		table td {
+			padding-right: 20px;
+			padding-bottom: 10px;
+		}
+		input, select, textarea {
+			width: 300px;
+			font-size: 16px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #aaa;
+			outline: none;
+			background-color: #eee;
+		}
+		input:focus, select:focus, textarea:focus {
+			background-color: #fff;
+		}
+		.birthdate select {
+			width: 100px;
+		}
+		.birthdate select:first-child {
+			width: 100px;
+		}
+		.birthdate select:last-child {
+			width: 100px;
+		}
+		input[type="checkbox"], input[type="radio"] {
+			width: auto;
+		}
+		button {
+			border: none;
+			background-color: #555;
+			color: #fff;
+			font-size: 16px;
+			padding: 8px 15px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #777;
+		}
+	</style>
+</head>
+<body>
+	<h1>Регистрация</h1>
+	<form action="">
+		<table>
+			<tr>
+				<td>Имя пользователя:</td>
+				<td>
+					<input type="text" name="register" placeholder="Имя пользователя">
+				</td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td>
+					<input type="text" name="email" placeholder="E-mail">
+				</td>
+			</tr>
+			<tr>
+				<td>Пароль:</td>
+				<td>
+					<input type="password" name="password1" placeholder="Пароль">
+				</td>
+			</tr>
+			<tr>
+				<td>Пароль (еще раз):</td>
+				<td>
+					<input type="password" name="password2" placeholder="Пароль еще раз">
+				</td>
+			</tr>
+			<tr>
+				<td>Страна:</td>
+				<td>
+					<select name="" id="">
+						<option value="">Выберите страну</option>
+						<option value="Россия">Россия</option>
+						<option value="Украина">Украина</option>
+						<option value="Белоруссия">Белоруссия</option>
+						<option value="">США</option>
+						<option value="">Великобритания</option>
+						<option value="">Китай</option>
+						<option value="">Канада</option>
+						<option value="">Франция</option>
+						<option value="">Япония</option>
+						<option value="">Италия</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="birthdate">
+				<td>Дата рождения</td>
+				<td>
+					<select name="" id="">
+						<option value="День">День</option>
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+						<option value="">4</option>
+						<option value="">5</option>
+						<option value="">6</option>
+						<option value="">7</option>
+						<option value="">8</option>
+						<option value="">9</option>
+						<option value="">10</option>
+						<option value="">11</option>
+						<option value="">12</option>
+						<option value="">13</option>
+						<option value="">14</option>
+						<option value="">15</option>
+						<option value="">16</option>
+						<option value="">17</option>
+						<option value="">18</option>
+						<option value="">19</option>
+						<option value="">20</option>
+						<option value="">21</option>
+						<option value="">22</option>
+						<option value="">23</option>
+						<option value="">24</option>
+						<option value="">25</option>
+						<option value="">26</option>
+						<option value="">27</option>
+						<option value="">28</option>
+						<option value="">29</option>
+						<option value="">30</option>
+						<option value="">31</option>
+					</select>
+					<select name="" id="">
+						<option value="">Месяц</option>
+						<option value="">Января</option>
+						<option value="">Февраля</option>
+						<option value="">Марта</option>
+						<option value="">Апреля</option>
+						<option value="">Мая</option>
+						<option value="">Июня</option>
+						<option value="">Июля</option>
+						<option value="">Августа</option>
+						<option value="">Сентября</option>
+						<option value="">Октября</option>
+						<option value="">Ноября</option>
+						<option value="">Декабря</option>
+					</select>
+					<select name="" id="">
+						<option value="">Год</option>
+						<option value="">1990</option>
+						<option value="">1991</option>
+						<option value="">1992</option>
+						<option value="">1993</option>
+						<option value="">1994</option>
+						<option value="">1995</option>
+						<option value="">1996</option>
+						<option value="">1997</option>
+						<option value="">1998</option>
+						<option value="">1999</option>
+						<option value="">2000</option>
+						<option value="">2001</option>
+						<option value="">2002</option>
+						<option value="">2003</option>
+						<option value="">2004</option>
+					</select>
+				</td>
+			</tr>
+			<tr class="languages">
+				<td>Языки</td>
+				<td>
+					<input type="checkbox"> JavaScript<br>
+					<input type="checkbox"> HTML<br>
+					<input type="checkbox"> CSS<br>
+					<input type="checkbox"> Python<br>
+					<input type="checkbox"> C++<br>
+				</td>
+			</tr>
+			<tr>
+				<td>Образование</td>
+				<td>
+					<input type="radio" name="education"> Нет образования<br>
+					<input type="radio" name="education"> Среднее<br>
+					<input type="radio" name="education"> Среднее профессиональное<br>
+					<input type="radio" name="education"> Высшее<br>
+				</td>
+			</tr>
+
+		</table>
+		<button>Зарегистрировать</button>
+	</form>
+</body>
+</html>
